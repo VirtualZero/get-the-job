@@ -58,7 +58,7 @@ section {
 }
 
 .button-hover:hover {
-    color: #8e24aa;
+    color: #8e24aa !important;
 }
 
 .no-left-padding {
@@ -66,6 +66,25 @@ section {
     margin-left: 0%;
 }
 
+.no-bottom-padding {
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+
 strong {
     font-weight: bold;
+}
+
+.full-height {
+    min-height: 100vh;
+}
+
+.ov-section-row {
+    margin-bottom: 0%; 
+    min-height: 40vh;
+}
+
+.profile-image {
+    max-height: 30vh; 
+    width: auto;
 }
