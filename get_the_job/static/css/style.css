@@ -88,3 +88,7 @@ strong {
     max-height: 30vh; 
     width: auto;
 }
+
+.verify-text {
+    font-size: 1.25rem;
+}
