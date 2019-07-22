@@ -1,6 +1,6 @@
 from get_the_job import app
 from get_the_job.forms.forms import ContactForm
-from flask import render_template, jsonify
+from flask import render_template, jsonify, abort, send_file
 import os
 import requests
 
@@ -59,3 +59,15 @@ def make_message(contact_form):
            f"Email: {contact_form.contact_email.data}\n" \
            f"Phone: {contact_form.contact_phone.data}\n" \
            f"Message: {contact_form.message.data}"
+
+
+@app.route('/download/Birtchum_Thompson_Resume.docx')
+def download_getip_vm():
+    try:
+        return send_file(
+            'static/resume/Birtchum_Thompson_Resume.docx',
+            attachment_filename='Birtchum_Thompson_Resume.docx'
+        )
+
+    except:
+        abort(500)
