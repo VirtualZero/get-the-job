@@ -21,7 +21,7 @@ def submit_message():
 
     if contact_form.validate_on_submit():
         send_message = requests.post(
-            'https://mailapi.virtualzero.tech/mail/send-mail',
+            os.environ['MAIL_API_URL'],
             headers={
                 'X-API-KEY': os.environ['MAIL_API_KEY']
             },

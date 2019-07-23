@@ -92,3 +92,8 @@ strong {
 .verify-text {
     font-size: 1.25rem;
 }
+
+.center-element {
+	text-align: center!important;
+	width: 100%!important
+}
