@@ -46,7 +46,8 @@ section {
 }
 
 .nav-link:hover {
-    background-color: #8e24aa;
+    background-color: #f5f5f5;
+    color: black !important;
 }
 
 #fixed-nav {
@@ -58,7 +59,8 @@ section {
 }
 
 .button-hover:hover {
-    color: #8e24aa !important;
+    color: white !important;
+    background-color: #212121 !important;
 }
 
 .no-left-padding {
@@ -105,3 +107,33 @@ strong {
 #math-text {
     font-size: 1.25rem;
 }
+
+.input-field input:focus + label {
+    color: #2196f3 !important;
+ }
+
+ /* label underline focus color */
+.row .input-field input:focus {
+    border-bottom: 1px #2196f3 !important;
+    box-shadow: 0 1px 0 0 #2196f3 !important;
+ }
+
+ .input-field textarea:focus + label {
+    color: #2196f3 !important;
+ }
+
+ /* label underline focus color */
+.row .input-field textarea:focus {
+    border-bottom: 1px #2196f3 !important;
+    box-shadow: 0 1px 0 0 #2196f3 !important;
+ }
+
+ .input-field radio:focus + label {
+    color: #2196f3 !important;
+ }
+
+ /* label underline focus color */
+.row .input-field radio:focus {
+    border-bottom: 1px #2196f3 !important;
+    box-shadow: 0 1px 0 0 !important;
+ }
