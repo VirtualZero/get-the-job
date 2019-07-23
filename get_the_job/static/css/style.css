@@ -97,3 +97,11 @@ strong {
 	text-align: center!important;
 	width: 100%!important
 }
+
+.button-border-black {
+    border: 1px solid black;
+}
+
+#math-text {
+    font-size: 1.25rem;
+}
