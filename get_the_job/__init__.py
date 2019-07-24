@@ -35,3 +35,4 @@ assets.register('get_the_job_css', css)
 
 
 from get_the_job.main.routes import main_routes
+from get_the_job.errors.routes import error_routes

@@ -81,6 +81,10 @@ strong {
     min-height: 100vh;
 }
 
+.inner-full-height {
+    min-height: 90vh;
+}
+
 .ov-section-row {
     margin-bottom: 0%; 
     min-height: 40vh;

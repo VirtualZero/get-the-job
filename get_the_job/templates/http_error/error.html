@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="valign-wrapper inner-full-height">
+    <div class="container" id="content">
+        <div class="row no-bottom-padding">
+            <div class="col s12">
+                <div class="container">
+                    <div class="card black-text flow-text">
+                        <div class="card-content">
+                            <div>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <h3>
+                                            Uh Oh!<i class="fas fa-exclamation-triangle red-text right"></i>
+                                        </h3>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col s12">
+                                        <p>
+                                            {{ error_msg|safe }}<br>
+                                            {{ status_msg|safe }}<br>
+                                            {{ code_msg|safe }} <span class="red-text">{{ status_code }}</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="section"></div>
+                                    <div class="col s12">
+                                        <a href="/" class="black-text grey lighten-4 right btn-flat waves-effect waves-purple button-hover">Home</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
