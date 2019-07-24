@@ -6,3 +6,8 @@ function getRandomNums() {
     document.getElementById('random-number2').innerHTML = randNum2;
     document.getElementById('input-rand-num2').value = randNum2;
 }
+
+window.onload = function () {
+    document.getElementById('landing-preloader').style.display = 'none';
+    document.getElementById('content-section').style.display = 'block';
+}
