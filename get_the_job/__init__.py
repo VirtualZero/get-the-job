@@ -8,6 +8,7 @@ import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ['APP_SECRET_KEY']
+app.config['DEBUG'] = False
 csrf = CSRFProtect(app)
 
 
