@@ -141,3 +141,7 @@ strong {
     border-bottom: 1px #2196f3 !important;
     box-shadow: 0 1px 0 0 !important;
  }
+
+ .app-desc-text {
+     font-size: 1.25rem;
+ }
