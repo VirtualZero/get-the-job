@@ -145,3 +145,11 @@ strong {
  .app-desc-text {
      font-size: 1.5rem;
  }
+
+ .dashboard-scroll::-webkit-scrollbar {
+    width: .6rem;
+}
+ 
+.dashboard-scroll::-webkit-scrollbar-thumb {
+  background-color: #2196f3;
+}
