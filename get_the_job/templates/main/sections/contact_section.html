@@ -12,7 +12,7 @@
         
                         <div id="contact-us-form-section">
                             <form action="/submit-message" method="POST" id="contact-us-form">
-                                <div class="row no-padding-bottom">
+                                <div class="row no-bottom-padding">
                                     <div class="col s12 m12 l6 input-field">
                                         <i class="fas fa-user prefix black-text"></i>
                                         {{ contact_form.contact_first_name(class="has-character-counter ", maxlength="100", required="", datalength="100") }}
@@ -38,7 +38,7 @@
                                     </div>
                                 </div>
                         
-                                <div class="row no-padding-bottom">
+                                <div class="row no-bottom-padding">
                                     <div class="col s12 m12 l6 input-field">
                                         <i class="fas fa-envelope prefix black-text"></i>
                                         {{ contact_form.contact_email(class="has-character-counter ", type="email", required="", maxlength="150", datalength="150")
@@ -65,7 +65,7 @@
                                     </div>
                                 </div>
                         
-                                <div class="row no-padding-bottom">
+                                <div class="row no-bottom-padding">
                                     <div class="col s12 input-field ">
                                         <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
                                         <i class="fas fa-pencil-alt prefix black-text"></i>
@@ -80,7 +80,7 @@
                                     </div>
                                 </div>
                         
-                                <div class="row">
+                                <div class="row no-bottom-padding">
                                     <div class="col s12 input-field">
                                         <i class="fas fa-calculator prefix black-text"></i>
                                         {{ contact_form.math_result(class="", required="", min="0", max="18") }}
