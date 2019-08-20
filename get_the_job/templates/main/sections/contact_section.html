@@ -5,8 +5,12 @@
                 <div class="card" style="width: 100% !important;">
                     <div class="card-content flow-text">
                         <div class="row" id="contact-header">
-                            <div class="col s12">
-                                <h3 class="center">Feel Free to Reach Out!</h3>
+                            <div class="col s12 center">
+                                <h3>Feel Free to Reach Out!</h3>
+                                <p>
+                                    <a href="mailto:birtchum@yahoo.com?Subject=Hello,%20Birtchum!" style="text-decoration: underline;">birtchum@yahoo.com</a> <strong>|</strong> 239-224-0209
+                                </p>
+                                <div class="section"></div>
                             </div>
                         </div>
         
@@ -101,7 +105,7 @@
                                 <div class="row" id="contact-us-form-btns">
                                     <div class="col s12">
                                         <div id="contact-us-form-btn">
-                                            <button class="btn-flat right waves-effect waves-purple grey lighten-4 button-hover" type="submit">
+                                            <button class="btn-flat right waves-effect waves-light grey lighten-4 button-hover" type="submit">
                                                 Send &nbsp;<i class="fas fa-paper-plane blue-text"></i>
                                             </button>
                                         </div>
@@ -214,7 +218,7 @@
         xhr.onerror = function () {
             document.getElementById("contact-us-form-btn").style.display = 'block';
             document.getElementById("contact-preloader").style.display = 'none';
-            M.toast({ html: '<p><i class="fas fa-2x fa-exclamation-triangle red-text text-accent-1 center"></i></p> &nbsp;&nbsp;&nbsp;<p>An error occured submitting the form.</p>', classes: 'grey darken-3 button-border-purple white-text center' })
+            M.toast({ html: '<p><i class="fas fa-2x fa-exclamation-triangle red-text text-accent-1 center"></i></p> &nbsp;&nbsp;&nbsp;<p>An error occured submitting the form.</p>', classes: 'grey darken-3 white-text center' })
         };
 
         xhr.send(params);
