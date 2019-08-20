@@ -3,12 +3,15 @@
 from flask import Flask
 from flask_wtf.csrf import CSRFProtect
 from flask_assets import Environment, Bundle
+from flask_htmlmin import HTMLMIN
 import os
 
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ['APP_SECRET_KEY']
 app.config['DEBUG'] = False
+app.config['MINIFY_PAGE'] = True
+htmlmin = HTMLMIN(app)
 csrf = CSRFProtect(app)
 
 
